@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+var Star=prompt('Nhập tên cầu thủ');
+    var NgoiSao=new Array("Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" );
+    var ChomSao=new Array("Ursa","Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa","Major","Leo");
+    function TimKiemNgoiSao(Star)
+    {    var index=-1;
+        for(var i=0;i<NgoiSao.length;i++)
+        {
+            if(NgoiSao[i]==Star)
+            {
+                index=i;
+            }
+        }
+        if(index==-1)
+        {
+            return 'Không tìm thấy cầu thủ';
+        }
+        else
+            {
+                return ChomSao[index];
+            }
+    }
+    alert(TimKiemNgoiSao(Star));
+</script>
+</body>
+</html>
